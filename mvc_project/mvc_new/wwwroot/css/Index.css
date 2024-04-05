@@ -1,0 +1,169 @@
+.content{
+    position: absolute;
+    top:40%;
+    left:5%;
+}
+.content .name{
+    font-size: larger;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+.content .des{
+    width: 40%;
+    color: white;
+    text-align: justify;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+.content button{
+    width: 10%;
+    padding:1rem;
+    border-radius: 2rem;
+    background-color:transparent;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+    /* transition: all linear ; */
+}
+.content button:hover{
+    background-color:orange; 
+    box-shadow: 5px 5px black;
+    /* background-color:linear-gradient(to left, #ff0000   #ff0000 0 50%, #ff0000 50%, #ff0000); */
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    25%{
+        opacity: 0.25;
+        transform: translate(0, 75px);
+        filter: blur(25px);
+
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate(0px, 50px);
+        filter: blur(18px);
+
+    }
+    75%{
+        opacity: 0.75;
+        transform: translate(0px, 25px);
+        filter: blur(10px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+.about_icon .var{
+    border:2px dotted orange;
+    border-radius:50%;
+
+}
+
+.about_icon .var:hover{
+    background-color: orange;
+    color: white;
+    border:none;
+    border-radius:50%;
+
+}
+
+
+
+
+/***********************************************Service Style ******************************************/
+.service_img{
+    border-radius: 50% 0% 50% 0%;
+    transition: all 2s ease;
+ 
+}
+.service_img:hover{
+    border-radius:0 0 0 0;
+   
+    
+}
+.chat_one p{
+    font-size:x-large;
+    color:orange;
+}
+.chat_one sup{
+    font-size:smaller;
+    font-weight:800;
+    color:black;
+}
+
+.service_one_list{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    padding-bottom:4rem;
+}
+.service_one_list i{
+    
+    color:white; 
+    display:inline block;
+    border:2px solid orange;
+    background-color:orange;
+    border-radius:50px;
+    margin-right:1.5rem;
+    padding:5px;
+}
+
+
+/*********************************************** Pets_For_Sale Style ******************************************/
+.pets_for_sale_main{
+    display:flex;
+    gap:2rem;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.pets_for_sale_one{
+    width:30%;
+    height:200px;
+    position: relative;
+}
+.pets_img{
+    width:100%;
+    height:100%;
+    object-fit:contain;  
+    backface-visibility: hidden;
+}
+.middle {
+    
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.pets_for_sale_one:hover  .pets_img{
+    opacity: 0.3;
+}
+
+.pets_for_sale_one:hover  .middle{
+
+       opacity: 1;
+       
+  }
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+

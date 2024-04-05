@@ -1,0 +1,54 @@
+@{
+    Layout = "_SigninLayout";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RbShop</title>
+    <link rel="stylesheet" href="~/css/Shop_Signin.css" asp-append-version="true" />
+    <link rel="icon" href="/logo/logo2.png">
+</head>
+<body>
+    <header>
+        <p>Rb Pets Shop</p>
+        <!-- <p>Create a new account</p>
+        <small>it's quick and easy</small> -->
+
+    </header>
+    <main>
+        <article class="signin_head">
+            <p>Create a new account</p>
+            <small>it's quick and easy</small>
+        </article>
+        <form action="Register" method="post">
+        <article class="signin_form">
+            <section class="singin_one mt-4">
+                    <label for="firstname"></label>
+                    <input  class="" type="text" name="FirstName" id="firstname" placeholder="FirstName">
+                    <label for="lastname"></label>
+                    <input type="text" name="LastName" id="lastname" placeholder="LastName">
+                    <label for="email"></label>
+                    <input type="email" name="EmailId" id="email" placeholder="Email Address">
+            </section>
+            <section class="singin_one mt-4">
+                <label for="phonenum"></label>
+                <input type="tel" name="PhoneNumber" id="phonenum" placeholder="PhoneNumber">
+                <label for="password"></label>
+                <input type="password" name="Password" id="password" placeholder="Password">
+                <label for="confirm-password"></label>
+                <input type="password" name="ConformPassword" id="confirm-password" placeholder="Conform Password">
+            </section>
+            <section class="singin_two mt-1">
+                <div class="btn">
+                    <button>Submit</button>
+                </div>
+                <div class="mb-4">
+                    <a href=""> <small>Already have  an account</small></a>
+                </div>
+            </section>
+        </article>    
+        
+        </form>
+    </main>
+</body>
+</html>
